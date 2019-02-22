@@ -12,15 +12,21 @@ const ContactPage = ({ data }) => (
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="contact us"
-      styleClass="about-background"
+      styleClass="contact-background"
     />
-    <Info />
+
+    <Info
+      info="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+    />
   </Layout>
 );
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "about-bg.jpg" }) {
+    img: file(relativePath: { eq: "contact-bg.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -30,4 +36,4 @@ export const query = graphql`
   }
 `;
 
-export default AboutPage;
+export default ContactPage;

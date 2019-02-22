@@ -36,17 +36,19 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(45, 30, 241, 0.5), rgba(45, 30, 241, 0.1));
+  background: linear-gradient(var(--mainBlue), rgba(255, 255, 255, 0.5));
   background-position: center;
   background-size: cover;
 }
 
-.about-background {
+.about-background,
+.service-background,
+.contact-background {
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(45, 30, 241, 0.5), rgba(45, 30, 241, 0.1));
+  background: linear-gradient(var(--mainBlue), rgba(255, 255, 255, 0.5));
   background-position: center;
   background-size: cover;
 }
@@ -63,5 +65,5 @@ h6 {
 }
 
 .footer {
-  background: var(--mainBlue);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), var(--mainBlue));
 }

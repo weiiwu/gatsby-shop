@@ -11,16 +11,23 @@ const ServicePage = ({ data }) => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="our Service"
-      styleClass="about-background"
+      title="our service"
+      styleClass="service-background"
     />
-    <Info />
+
+    <Info
+      info="Quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+    />
   </Layout>
 );
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "about-bg.jpg" }) {
+    img: file(relativePath: { eq: "service-bg.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -30,4 +37,4 @@ export const query = graphql`
   }
 `;
 
-export default AboutPage;
+export default ServicePage;
