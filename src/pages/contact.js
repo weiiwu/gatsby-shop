@@ -16,10 +16,10 @@ const ContactPage = ({ data }) => (
     />
 
     <Info
-      info="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+      info="Tel: 1234 5678 <br />
+            E-mail: straya@test.com <br />
+            Fax: 9876 5432 <br />
+            Address: 999 Lorem ipsum dolor sit amet, AU"
     />
   </Layout>
 );
