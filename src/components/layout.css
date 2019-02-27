@@ -4,7 +4,7 @@
   --mainGrey: #666666;
   --mainWhite: #ffffff;
   --mainDark: #222222;
-  --mainLight: #eeeeee;
+  --mainLight: #add8e6;
 }
 
 body {
@@ -63,4 +63,8 @@ h6 {
 
 .footer {
   background: linear-gradient(rgba(255, 255, 255, 0.5), var(--mainBlue));
+}
+
+.menu {
+  background: var(--mainLight);
 }

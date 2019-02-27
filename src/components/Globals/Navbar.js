@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 import logo from "../../images/logo.png";
-import { FaCartArrowDown } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default class Navbar extends Component {
   state = {
@@ -63,7 +63,7 @@ export default class Navbar extends Component {
               );
             })}
             <li className="nav-item ml-sm-5">
-              <FaCartArrowDown className="cart-icon" />
+              <FaShoppingCart className="cart-icon" />
             </li>
           </ul>
         </div>
