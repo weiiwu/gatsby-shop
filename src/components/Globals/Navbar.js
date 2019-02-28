@@ -40,7 +40,7 @@ export default class Navbar extends Component {
   };
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+      <nav className="navbar navbar-expand-sm bg-light text-primary">
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="logo" style={{ width: 30 }} />
         </Link>
@@ -63,7 +63,7 @@ export default class Navbar extends Component {
               );
             })}
             <li className="nav-item ml-sm-5">
-              <FaShoppingCart className="cart-icon" />
+              <FaShoppingCart className="cart-icon text-info" />
             </li>
           </ul>
         </div>

@@ -7,6 +7,7 @@ import BackgroundSection from "../components/Globals/BackgroundSection";
 import Info from "../components/Home/Info";
 import Title from "../components/Globals/Title";
 import Menu from "../components/Home/Menu";
+import Products from "../components/Home/Products";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -29,6 +30,7 @@ const IndexPage = ({ data }) => (
         <button className="btn text-uppercase btndark mb-5">about us</button>
       </Link>
     </div>
+    <Products />
     <Menu items={data.menu} />
   </Layout>
 );
