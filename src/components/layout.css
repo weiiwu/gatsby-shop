@@ -28,7 +28,7 @@ h6 {
 .cart-icon {
   cursor: pointer;
   color: var(--mainDark);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .default-background,
@@ -65,6 +65,7 @@ h6 {
   background: linear-gradient(rgba(255, 255, 255, 0.5), var(--mainBlue));
 }
 
-.menu {
+.menu,
+.contact {
   background: var(--mainLight);
 }

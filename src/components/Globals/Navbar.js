@@ -40,7 +40,7 @@ export default class Navbar extends Component {
   };
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-light text-primary">
+      <nav className="navbar navbar-expand-sm bg-light navbar-light">
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="logo" style={{ width: 30 }} />
         </Link>
@@ -56,14 +56,17 @@ export default class Navbar extends Component {
             {this.state.links.map(link => {
               return (
                 <li key={link.id} className="nav-item">
-                  <Link to={link.path} className="nav-link text-capitalize">
+                  <Link
+                    to={link.path}
+                    className="nav-link text-capitalize text-primary"
+                  >
                     {link.text}
                   </Link>
                 </li>
               );
             })}
             <li className="nav-item ml-sm-5">
-              <FaShoppingCart className="cart-icon text-info" />
+              <FaShoppingCart className="cart-icon text-primary" />
             </li>
           </ul>
         </div>

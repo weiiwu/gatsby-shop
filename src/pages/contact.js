@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundSection from "../components/Globals/BackgroundSection";
 import Info from "../components/Home/Info";
+import Contact from "../components/Home/Contact";
 
 const ContactPage = ({ data }) => (
   <Layout>
@@ -15,12 +16,7 @@ const ContactPage = ({ data }) => (
       styleClass="contact-background"
     />
 
-    <Info
-      info="Tel: 1234 5678 <br />
-            E-mail: straya@test.com <br />
-            Fax: 9876 5432 <br />
-            Address: 999 Lorem ipsum dolor sit amet, AU"
-    />
+    <Contact />
   </Layout>
 );
 
