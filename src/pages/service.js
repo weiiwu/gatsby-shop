@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundSection from "../components/Globals/BackgroundSection";
 import Info from "../components/Home/Info";
+import Menu from "../components/Home/Menu";
 
 const ServicePage = ({ data }) => (
   <Layout>
@@ -22,6 +23,7 @@ const ServicePage = ({ data }) => (
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum."
     />
+    <Menu items={data.menu} />
   </Layout>
 );
 
@@ -31,6 +33,25 @@ export const query = graphql`
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+
+    menu: allContentfulItem {
+      edges {
+        node {
+          id
+          title
+          description {
+            description
+          }
+          price
+          category
+          image {
+            fixed(width: 50, height: 50) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
         }
       }
     }

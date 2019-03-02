@@ -13,7 +13,14 @@ export default function Product({ product }) {
           <h6>
             <small>${product.price}</small>
           </h6>
-          <button className="btn btn-info mt-3 text-capitalize">
+          <button
+            className="btn btn-info mt-3 text-capitalize snipcart-add-item"
+            data-item-id={product.id}
+            data-item-name={product.title}
+            data-item-price={product.price}
+            data-item-image={product.image.fluid.src}
+            data-item-url="https://gatsby-shop.netlify.com/"
+          >
             add to cart
           </button>
         </div>

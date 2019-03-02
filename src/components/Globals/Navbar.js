@@ -66,7 +66,7 @@ export default class Navbar extends Component {
               );
             })}
             <li className="nav-item ml-sm-5">
-              <FaShoppingCart className="cart-icon text-primary" />
+              <FaShoppingCart className="cart-icon text-primary snipcart-checkout" />
             </li>
           </ul>
         </div>
